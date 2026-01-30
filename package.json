@@ -11,6 +11,9 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
+    "date-fns": "^4.1.0",
+    "dhtmlx-gantt": "^9.1.1",
+    "lodash": "^4.17.23",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-scripts": "5.0.1",
@@ -29,6 +32,12 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^canvas$": "<rootDir>/src/__mocks__/canvas.js",
+      "^dhtmlx-gantt$": "<rootDir>/src/__mocks__/dhtmlx-gantt.ts"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.23"
   }
 }

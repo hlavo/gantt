@@ -1,0 +1,18 @@
+.project-start-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-start-control__label {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.project-start-control__input {
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 14px;
+}
+

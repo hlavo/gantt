@@ -1,9 +1,14 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  test('displays a spinner while loading data', () => {
+    render(<App />);
+    expect(screen.getByRole('status')).toBeInTheDocument();
+  });
 });

@@ -1,0 +1,46 @@
+/* Global CSS Variables - Color Palette */
+:root {
+  /* Primary colors */
+  --color-primary: #6879ff;
+  --color-primary-dark: #4a5ae0;
+  
+  /* Accent colors */
+  --color-accent: #85ffc3;
+  --color-warning: #ffa700;
+  --color-warning-dark: #cc8500;
+  
+  /* Neutral colors */
+  --color-dark: #112238;
+  --color-gray: #7a7979;
+  --color-gray-dark: #5a5959;
+  --color-white: white;
+  --color-border: #e0e0e0;
+  
+  /* Background colors */
+  --color-bg-light: #ecf0f1;
+  --color-bg-hover: #e8f7f0;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-warning: 0 0 8px rgba(255, 167, 0, 0.6);
+  --shadow-warning-sm: 0 0 4px rgba(255, 167, 0, 0.6);
+  
+  /* Transparency */
+  --color-primary-transparent: rgba(104, 121, 255, 0.1);
+  --color-white-transparent: rgba(255, 255, 255, 0.2);
+  --color-white-overlay: rgba(255, 255, 255, 0.3);
+  
+  /* DHTMLX Gantt overrides */
+  --dhx-gantt-scale-background: var(--color-dark);
+  --dhx-gantt-scale-color: var(--color-white);
+  --dhx-gantt-grid-head-background: var(--color-dark);
+  --dhx-gantt-grid-head-color: var(--color-white);
+  --dhx-gantt-link-background: var(--color-accent);
+  --dhx-gantt-link-line-color: var(--color-accent);
+  --dhx-gantt-tooltip-background: var(--color-dark);
+  --dhx-gantt-tooltip-color: var(--color-white);
+  --dhx-gantt-task-background: var(--color-primary);
+  --dhx-gantt-task-color: var(--color-white);
+  --dhx-gantt-selected-row-background: var(--color-primary-transparent);
+}

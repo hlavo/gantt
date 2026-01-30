@@ -1,0 +1,105 @@
+.gantt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  max-width: 100%;
+
+  height: Calc(100svh - 30px); 
+}
+
+.gantt-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gantt-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gantt-tooltip {
+  padding: 5px;
+  max-width: 300px;
+}
+
+.gantt-tooltip .tooltip-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-white-transparent);
+}
+
+.gantt-tooltip .tooltip-row {
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+.gantt-tooltip .tooltip-section {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.gantt-tooltip .tooltip-list {
+  margin: 4px 0 0 15px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.gantt-tooltip .tooltip-list li {
+  margin: 2px 0;
+}
+
+.gantt_task_line.task-past {
+  background-color: var(--color-gray);
+  border-color: var(--color-gray-dark);
+}
+
+.gantt_task_line.task-past .gantt_task_content {
+  background-color: transparent;
+}
+
+.gantt_task_content {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-overflow: ellipsis;
+}
+
+.gantt_task_line.task-past .gantt_task_progress {
+  background-color: var(--color-white-overlay);
+}
+
+.gantt_task_line.task-current {
+  background-color: var(--color-warning);
+  border-color: var(--color-warning-dark);
+  box-shadow: var(--shadow-warning);
+}
+
+.gantt_task_line.task-current .gantt_task_content {
+  background-color: transparent;
+  color: var(--color-dark);
+}
+
+.gantt_task_line.task-current .gantt_task_progress {
+  background-color: var(--color-white-overlay);
+}
+
+/* Future tasks - upcoming */
+.gantt_task_line.task-future {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary-dark);
+}
+
+.gantt_task_line.task-future .gantt_task_content {
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+.gantt_task_line.task-future .gantt_task_progress {
+  background-color: var(--color-white-overlay);
+}
