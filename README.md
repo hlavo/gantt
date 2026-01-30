@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It also contains a reusable Gantt diagram component ready for integration into your app.
+
 ## Available Scripts
 
 In the project directory, you can run:
